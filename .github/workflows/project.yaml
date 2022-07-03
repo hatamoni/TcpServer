@@ -2,9 +2,9 @@ name: CI Fuzz
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 env:
   FUZZING_SERVER_ADDRESS: grpc.code-intelligence.com:443
