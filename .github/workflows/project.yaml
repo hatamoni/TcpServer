@@ -20,7 +20,7 @@ jobs:
       image: hatamoni/tcpserverclientdemo
       credentials:
         username: ${{ secrets.DOCKER_USER }}
-        password: ${{ secrets.DOCKER_TOKEN }}
+        password: ${{ secrets.GH_ACTIONS_TOKEN }}
     steps:
       - id: checkout
         name: Checkout
