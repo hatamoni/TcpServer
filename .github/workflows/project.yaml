@@ -16,7 +16,11 @@ jobs:
   fuzz_tests:
     runs-on: ubuntu-latest
     # Configure your build environment here
-    # container: example/docker_image
+    container: 
+      image: hatamoni/tcpserverclientdemo
+      credentials:
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_TOKEN }}
     steps:
       - id: checkout
         name: Checkout
