@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     # Configure your build environment here
     container: 
-      image: hatamoni/tcpserverclientdemo
+      image: cifuzz/builders
       credentials:
         username: ${{ secrets.DOCKER_USER }}
         password: ${{ secrets.GH_ACTIONS_TOKEN }}
