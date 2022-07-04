@@ -14,7 +14,7 @@ env:
 
 jobs:
   fuzz_tests:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     # Configure your build environment here
     container: 
       image: hatamoni/tcpserverclientdemo
