@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     # Configure your build environment here
     container: 
-      image: hatamoni/ci-fuzz-buildimage
-      credentials:
-        username: ${{ secrets.DOCKER_USER }}
-        password: ${{ secrets.GH_ACTIONS_TOKEN }}
+      image: cifuzz/ci-ubuntu
+      #credentials:
+        #username: ${{ secrets.DOCKER_USER }}
+        #password: ${{ secrets.GH_ACTIONS_TOKEN }}
     steps:
       - id: checkout
         name: Checkout
